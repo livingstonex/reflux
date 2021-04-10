@@ -1,0 +1,26 @@
+{
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "rules": {
+    "curly": false,
+    "interface-name": [true, "never-prefix"],
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "variable-name": false,
+
+    // waiting on https://github.com/palantir/tslint/pull/3708
+    "no-implicit-dependencies": [true, "dev"],
+    "no-duplicate-imports": false,
+    "prefer-object-spread": false,
+    "no-console": false,
+    "no-shadowed-variable": false,
+    "max-classes-per-file": false,
+    "no-angle-bracket-type-assertion": false,
+    "no-object-literal-type-assertion": false,
+    "no-submodule-imports": false,
+
+    // Recommended built-in rules
+    "no-var-keyword": true,
+    "no-parameter-reassignment": true,
+    "typedef": [true, "call-signature"]
+  }
+}
